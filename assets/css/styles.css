@@ -5,7 +5,7 @@
 :root{
     --header-height: 3.5rem;
 
-    /* ===== COLORS ===== */
+    /* ===== STYLES COLORS ===== */
     /* COLOR MODE HSL(hue, saturation, lightness)*/
     --first-color: hsl(79, 72%, 55%); 
     --first-color-light: hsl(79, 97%, 77%);
@@ -18,7 +18,7 @@
     --text-colo-light: hsl(180, 4%, 65%);
     --body-color: hsl(180, 12%, 8%);
 
-    /* ===== FONT END TYPOGRAPHY ===== */
+    /* ===== STYLES FONT END TYPOGRAPHY ===== */
     /* .5rem = 8px | 1rem = 16px ....*/
     --body-font: 'Red Hat Display', sans-serif;
     --second-font: 'Kaushan Script', cursive;
@@ -32,7 +32,7 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    /* ===== FONT WEIGHT ===== */
+    /* ===== STYLES FONT WEIGHT ===== */
     --font-bold: 700;
     --font-black: 900;
 
@@ -41,7 +41,7 @@
     --z-fixed:  100;
 }
 
-/* RESPONSIVE TYPHOGRAPHY */
+/* STYLES RESPONSIVE TYPHOGRAPHY */
 @media screen and (min-width: 1024px){
     :root{
         --biggest-font-size: 6rem;
@@ -56,7 +56,7 @@
     }
 }
 
-/* ===== BASE ===== */
+/* ===== STYLES BASE ===== */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -96,7 +96,7 @@ img{
 }
 
 
-/* ===== REUSABLE CSS CLASSESS ===== */
+/* ===== STYLES REUSABLE CSS CLASSESS ===== */
 .container{
     max-width: 1124px;
     margin-right: 1.5rem;
@@ -158,7 +158,7 @@ img{
     color: var(--first-color);
 }
 
-/* ===== HEADER & NAV  ===== */
+/* ===== STYLES HEADER & NAV  ===== */
 .header{
     width: 100%;
     background-color: transparent;
@@ -249,12 +249,12 @@ ul.nav__list li{
 
 }
 
-/* SHOW MENU */
+/* STYLES SHOW MENU */
 .show-menu{
     right: 0;
 }
 
-/* CHANGE BACKGROUND HEADER */
+/* STYLES CHANGE BACKGROUND HEADER */
 .bg-header{
     background-color: var(--body-color);
     box-shadow: 0 4px 8px hsla(180, 12%, 4%, .3);
@@ -262,7 +262,7 @@ ul.nav__list li{
 
 /* ACTIVE LINK */
 
-/* ===== HOME ===== */
+/* ===== STYLES HOME ===== */
 .home{
     position: relative;
     padding-bottom: 0;
@@ -335,7 +335,7 @@ ul.nav__list li{
     margin: 0 auto;
 }
 
-/* ===== BUTTON ===== */
+/* ===== STYLES BUTTON ===== */
 .button{
     display: inline-block;
     background-color: var(--first-color);
@@ -364,7 +364,7 @@ ul.nav__list li{
     column-gap: .5rem;
 }
 
-/*========== LOGOS ==========*/
+/*========== STYLES LOGOS ==========*/
 logos__container{
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -375,7 +375,7 @@ logos__container{
     width: 120px;
 }
 
-/* ===== PROGRAM ===== */
+/* ===== STYLES PROGRAM ===== */
 .program__container{
     grid-template-columns: 225px;
     justify-content: center;
@@ -456,4 +456,78 @@ logos__container{
 
 .program__card:hover .program__button{
     opacity: 1  ;
+}
+
+/* ===== STYLES CHOOSE ===== */
+.choose{
+    padding-bottom: 0;
+}
+
+.choose__overflow{
+    position: relative;
+}
+
+.choose__container{
+    row-gap: 3rem;
+}
+
+.choose__content .section__data{
+    margin-bottom: 2rem;
+}
+
+.choose__description{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.choose__data{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+}
+
+.choose__group{
+    text-align: center;
+}
+
+.choose__number{
+    font-size: var(--h1-font-size);
+    font-family: var(--second-font);
+    font-weight: 400;
+    margin-bottom: .25rem;
+}
+
+.choose__subtile{
+    font-size: var(--small-font-size);
+}
+
+.choose__triangle{
+    height: 325px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.choose__triangle-1{
+    width: 305px;
+    background-color: var(--first-color);
+}
+
+.choose__triangle-2{
+    width: 205px;
+    background-color: var(--first-color-alt);
+}
+
+.choose__triangle-3{
+    width: 105px;
+    background-color: var(--first-color-dark);
+}
+
+.choose__img{
+    width: 260px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: auto;
 }
